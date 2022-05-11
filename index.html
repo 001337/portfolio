@@ -111,13 +111,12 @@ Option B - SLAM :
 Solution logicielles et application métiers
             <br>
  
-La spécialisation SLAM du BTS SIO est elle plus orientée Développement. Elle permet d'apprendre à réaliser des logiciels, sites webs, applications mobiles, mais aussi de rédiger des documentations techniques liées à celles-ci. De plus, elle permet d'apprendre à former des utilisateurs pour gérer la maintenance des applications. <br>
-              <br>
+La spécialisation SLAM du BTS SIO est elle plus orientée Développement. Elle permet d'apprendre à réaliser des logiciels, sites webs, applications mobiles, mais aussi de rédiger des documentations techniques liées à celles-ci. De plus, elle permet d'apprendre à former des utilisateurs pour gérer la maintenance des applications. <br> <br>
 Matière enseigner dans la formation : <br>
             <br>
  
 - Culture Générale & Expression <br>
- -Anglais <br>
+- Anglais <br>
 - Mathématiques (Option Mathématique Approfondie) <br>
 - Algorithmie <br>
 - Analyse économique, managériale et juridiques des services informatiques <br>
@@ -170,21 +169,97 @@ Matière enseigner dans la formation : <br>
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h1 class="title-a">
-              Projets
+              Projets 
             </h1>
             
           </br>
           </br>
             <div class="title-box text-center">
               <h1 class="title-a">
-                A compléter 
+                Contexte : description de l'entreprise et de ses besoins informatiques
                 
               </br>
               </br>
               
               </h1>
              
-            <p class="subtitle-a">
+              <div class="title-box text-left">
+                <h1 class="title-a">
+                 Le secteur d’activité : <br>
+                </h1>
+
+    <p class="subtitle-a">
+    L’industrie de l’automobile plus précisément dans l’automobile électrique est un secteur en expansion. <br>
+    L’utilisation des batteries Lithium-ion ces dernières années à fortement augmentée dû à la démocratisation des véhicules électriques. <br>
+    Les constructeurs actuels de véhicules veulent tous se mettre à des véhicules 100% électriques dans les années à venir.   
+  </p>
+
+  <div class="title-box text-left">
+    <h1 class="title-a">
+      L’entreprise : <br>
+      </h1>
+    
+    <p class="subtitle-a">
+    L’entreprise HG AUTOMOBILE est une jeune startup Genevoise constituée de 11 salariés, créé en 2020, son chiffre d’affaires est de CHF 350 000.- soit 332 310 €. 
+    Elle exerce son activité dans l’automobile et plus précisément dans le domaine de la voiture 100% électrique. <br>
+    HG AUTOMOBILE conçois des véhicules électriques qui ont la particularité de se recharger en roulant à l’aide de panneaux solaires situé sur les toits du véhicule. 
+    </p>
+    
+    <div class="title-box text-left">
+      <h1 class="title-a">
+    Description du Système informatique : <br>
+      </h1>
+      <h2>Le système informatique :</h2>
+    
+     <p class="subtitle-a">
+    Dans nos locaux, toutes les fonctions administratives (service commerciale, service administratif, comptabilité, etc.) sont présentes. On trouve en outre un service externe pour la gestion du service informatique de l’entreprise. <br>
+    Notre salle serveur occupera le 3e étage du bâtiment avec des accès restreints uniquement au prestataire externe et le PDG. <br>
+    La salle est protégée avec un sas, une porte munie d’un lecteur de badge et des caméras. <br>
+    Les serveurs assurent les fonctions de base du réseau (DHCP, DNS, VPN, …) et fonctions de communication (Intranet, Messagerie, Agenda Partager, etc.) <br>
+    Constituer autour de VLAN, le réseau segmente les services de manière à sécuriser le réseau et fluidifier le trafic. <br>
+    Les données de l’entreprise sont considérées comme stratégiques et ne peuvent tolérer ni fuite, ni destruction. <br>
+    Elles seront stockées dans des serveurs avec des disque durs chiffrés en AES 256.  
+    </p>
+    
+     <h2>L’équipement : </h2>
+    
+     <p class="subtitle-a">
+    L’informatique est fortement rependue dans notre entreprise. Chaque employé est équipé de laptop chiffré par Bitlocker (PC Portable). On dénombre ainsi 50 équipement terminaux et nombre de serveurs physique conséquent sur lesquelles tournent plus de 10 serveurs virtuels. <br>
+    On trouve aussi des PC fixe pour les commerciaux sur la gestion des ventes qui sont aussi sécurisé par Bitlocker et une multitude de laptop pour le PDG donc les machines sont aussi sécurisées comme les autres machines de l’entreprise sous Windows, les responsables, etc. <br>
+    Chaque employé de l’entreprise a une adresse électronique de la forme nomutilisateur@hg.ch dont ils disposent de stockage limité. 
+     </p>
+    
+     <h2>Organisation du réseau : répartition des services</h2> 
+    ​
+    <p class="subtitle-a">
+    Chaque étage dispose d’une baie de brassage qui est relié par une fibre à la baie centrale de la salle serveurs. Chaque baie peut disposer de Switch POE dépendent d’où le switch est placer, elle dispose aussi de bandeau de passage de câble. On trouve aussi un relais DHCP qui est relié à toutes les baie de brassage via le switch principal et le switch dans chaque baie de brassage. <br>
+    La salle de réunions est équipée d’un point d’accès Wi-Fi « Visiteur » qui autorise uniquement un accès internet. Et d’un autre SSID « HG-Visiteur » qui servira pour les personnes de l’entreprise. <br>
+    Les PC portables connecter au Wi-Fi « Visiteur » reçoivent ainsi une adresse IP et ont par conséquent accès qu’aux services DHCP et DNS. <br>
+    La salle de réunion dispose d’enceintes et d’un tableau numérique interactif.
+    </p>
+    
+      <h2>Supervision du réseau : </h2> 
+    <p class="subtitle-a">
+    Toutes les activités qui se passent sur le réseau interne de l’entreprise sont stockés sur un serveur interne qui va conserver les logs pendant 1 an. 
+    </p>
+    
+    <h2>Segmentation : </h2> 
+    
+    L’organisation des VLAN et de l’adressage IP est la suivante : <br>
+    <img src="img/vlan.png"> <br> <br>
+
+    Les règles actuelles concernant les VLANS sont les suivantes : <br> <br>
+    <p class="subtitle-a">
+    Chaque VLAN (sauf VLAN « Visiteur ») peut uniquement avoir accès au service qu’ils ont besoin en fonction de leur fonction dans l’entreprise. <br>
+
+    Le VLAN « Visiteur » peut uniquement interroger les serveur DNS et DHCP et avoir accès à internet.
+    </p>
+
+    <h2>Salle serveur et connexion internet :</h2>
+
+    Dans l'organisation des serveurs suivant, il n'est pas précisé si les serveurs sont virtualisés ou non. Seuls les serveurs principaux sont présentés. Les redondances n'existe pas. 
+
+
             <div class="line-mf"></div>
           </div>
         </div>
@@ -213,6 +288,17 @@ Matière enseigner dans la formation : <br>
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
               <p>Si le fichier n'apparaît pas, veuillez <a href="media/Valentin GAGNIERE - E4 - Tableau de synthese .pdf" target="_blank" style="color: #00afee">cliquez ici</a></p>
+
+              <p>TP GLPI : <a href="media/TP GLPI - Valentin GAGNIERE - BTS SIO 2 .pdf" target="_blank" style="color: #00afee">GLPI</a></p>
+
+              <p>TP WDS : <a href="media/Compte_Rendu_Deploiement.pdf" target="_blank" style="color: #00afee">WDS</a></p>
+
+              <p>Mise en place d'un script python  : <a href="media/RAPPORT DE STAGE AWS SNCF - Valentin GAGNIERE - BTS SIO.pdf" target="_blank" style="color: #00afee">Script Python</a></p>
+
+              <p>Mise en place d'un serveur GLPI : <a href="media/RAPPORT DE STAGE Asselio - Valentin GAGNIERE.pdf" target="_blank" style="color: #00afee">Serveur GLPI</a></p>
+
+
+
             <div class="line-mf"></div>
           </div>
         </div>
